@@ -1,0 +1,4 @@
+DATA AKUN MAHASISWA
+Link Github: https://github.com/manglapyn-ui
+Link Google Colab:https://colab.research.google.com/drive/1G9nQMc1eRFYLyo9wnS9RSrRqYlqmKI9O?usp=sharing
+Link LinkedIn : linkedin.com/in/natasya-manglapy-61a03b442
