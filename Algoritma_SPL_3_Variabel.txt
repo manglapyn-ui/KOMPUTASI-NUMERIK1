@@ -1,0 +1,101 @@
+1. TUJUAN 
+Algoritma ini digunakan untuk mencari nilai tiga variable, yaitu x, y, dan z,
+dari tiga persamaan linear.Penyelesaian dilakukan dengan metode eliminasi
+Gauss, yaitu mengubah matriks koefisien menjadi bentuk segitiga atas, kemudian
+menghitung nilai variabel menggunakan subtitusi mundur.
+
+2 BENTUK UMUM 
+a1x + b1y + c1z = d1
+a2x + b2y + c2z = d2
+a3x + b3y + c3z = d3
+
+Bentuk matriks augmented :
+[a1 b1 c1|d1]
+[a2 b2 c2|d2]
+[a3 b3 c3|d3]
+
+
+3. CONTOH SOAL
+Selesaikan sistem persamaan berikut :
+(1) 2x + y - z = 8
+(2) -3x - y + 2z = -11
+(3) -2x + y + 2z = -3
+
+Matriks augmented awal : 
+[2  1 -1|8]
+[-3 -1 2|-11]
+[-2 1 2|-3]
+
+4. LANGKAH-LANGKAH ALGORITMA
+1) Mulai
+2) masukan koefisien setiap variabel dan konstanta dari tiga persamaan.
+3) susun nilai tersebut ke dalam matriks augmented berukuran 3x4.
+4) Untuk setiap kolom pivot dari kolom pertama sampai kolom kedua :
+   a) cari elemen dengan nilai mutlak terbesar pada kolom pivot, mulai dari
+      baris pivot sampai baris terakhir.Langkah ini disebut pivot parsial.
+   b) Tukar baris pivot dengan baris yang memiliki elemen terbesar tersebut.
+   c) Jika nilai pivot mendekati nol. hentikan proses dan periksa apakah sistem tidak memiliki
+      fungsi tunggal.
+   d) Untuk setiap baris di bawah garis privot, hitung faktor eliminasi : 
+      Faktor = elemen pada kolom privot baris tersebut/ elemen privot.
+   e) Kurangi baris tersebut dengan faktor dikalikan baris privot agar elemen
+      di bawah pivot menjadi nol.
+5) Setelah matriks berbentuk segitiga atas, periksa kembali pivot terakhir.
+6) Hitung variabel z dari persamaan baris ketiga.
+7) Hitung variabel y dengan memasukkan nilai z ke persamaan baris kedua.
+8) Hitung variabel x dengan memasukkan nilai y dan z ke persamaan baris pertama.
+9) Tampilkan nilai x, y, dan z.
+10) Selesai.
+
+5. PSEUDOCODE
+MULAI 
+     Baca matriks augmented A berukuran 3x4
+UNTUK KOLOM = 0 sampai 1
+      Tentukan baris privot dengan nilai mutlak terbesar
+      pada kolom tersebut dari baris aktif sampai baris terakhir
+      tukar baris aktif dengan baris pivot jika di perlukan
+JIKA nilai pivot mendekati nol
+    Tampilkan "Sistem tidak memiliki solusi tunggal"
+     SELESAI
+AKHIR JIKA
+UNTUK setiap baris di bawah baris aktif 
+faktor = A[baris,kolom] / A[baris aktif,kolom]
+kurangi baris dengan faktor dikali baris aktif
+     AKHIR UNTUK
+AKHIR UNTUK
+JIKA pivot terakhir mendekati nol
+    Tampilkan "Sistem tidak memiliki solusi tunggal"
+SELESAI
+AKHIR JIKA
+Hitung z menggunakan substitusi mundur
+Hitung y menggunakan substitusi mundur
+Hitung x menggunakan substitusi mundur
+Tampilkan x,y,z
+SELESAI
+
+6. HASIL PERHITUNGAN CONTOH : 
+Matriks augmented awal : 
+[2 1 -1 | 8]
+[-3 -1 2|-11]
+[-2 1 2|-3]
+
+Setelah eliminasi Gauss diperoleh bentuk segitiga atas : 
+[2 1 -1|8]
+[0 0.5 0.5 | 1]
+[0 0 1| -1]
+
+Substitusi mundur:
+Dari baris ketiga : z = -1
+Dari baris kedua : 0.5y + 0.5(-1) = 1, sehingga y = 3
+Dari baris pertama : 2x + 3 -(-1) = 8, sehingga x = 2
+jadi, hasil penyelesaian adalah : 
+x = 2
+y = 3
+z = -1
+
+7. KESIMPULAN
+Berdasarkan perhitungan menggunakan metode eliminasi Gauss dengan pivot parsial,
+sistem persamaan linear tiga variabel pada contoh soal memiliki solusi tunggal, yaitu x = 2, y = 3,
+dan z = -1. metode ini menyelesaikan sistem dengan mengubah matriks augmented menjadi bentuk segitiga atas, 
+kemudia melakukan substitusi mundur untuk memperoleh nilai setiap variabel.
+
