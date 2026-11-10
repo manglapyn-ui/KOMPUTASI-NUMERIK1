@@ -1,0 +1,19 @@
+PROMT AI PROYEK KOMPUTASI NUMERIK(SPL) 3 VARIABEL :
+1. PROMPT PEMAHAMAN METODE:
+   Jelaskan kepada saya konsep penyelesaian sistem persamaan linear tiga variabel menggunakan 
+   metode eliminasi Gauss dengan partial pivoting.uraikan Tahapan dan tujuan setiap proses menggunakan
+   bahasa mahasiswa yang mudah dipahami.
+2. PROMPT PEMBUATAN ALGORITMA:
+   Buat algoritma penyelesaian SPL tiga variabel menggunakan metode eliminasi Gauss dengan Partial
+   pivoting.Susun langkah-langkah mulai dari pembentukan matriks,eliminasi maju,hingga substitusi
+   mundur secara sistematis.
+3. PROMPT PEMBUATAN KODE PYTHON:
+   Buat program python untuk menyelesaikan SPL tiga variabel menggunakan metode eliminasi eliminasi
+   Gauss dengan partial pivoting.
+4. PROMPT PENJELASAN PROGRAM
+   Jelaskan setiap baris kode python yang digunakan, termasuk fungsi variabel, matriks,pivot,
+   eliminasi maju, dan substitusi mundur.
+5. PROMPT PEMERIKSAAN PROGRAM
+   Periksa ketetapan algoritma, kode python, proses perhitungan, dan hasil penyelesaian SPL
+   tiga variabel.Berikan koreksi apabila ditemukan kesalahan.
+   
