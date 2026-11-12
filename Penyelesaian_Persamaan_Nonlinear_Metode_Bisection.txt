@@ -1,0 +1,14 @@
+1 TUJUAN 
+Algoritma ini digunakan untuk mencari nilai akar suatu persamaan nonlinear satu variabel,
+yaitu x, dengan metode Bisection atau metode bagi dua.Penyelesaian dilakukan dengan menentukan
+interval awal yang memiliki nilai fungsi berbeda tanda,kemudian membagi interval awal
+yang memiliki nilai fungsi berbeda tanda,kemudian membagi interval tersebut menjadi dua bagian
+secara berulang sampai diperoleh nilai x yang mendekati akar persamaan.
+
+2. BENTUK UMUM
+persamaan nonlinear yang akan dicari akarnya ditulis dalam bentuk : 
+F(x) = 0
+titik tengah interval dihitung menggunakan rumus : 
+c = (a + b) /2
+Keterangan : a adalah batas bawah,b adalah batas atas, dan c adalah titik tengah interval.Proses
+pembagian interval dilakukan berulang kali sampai memenuhi batas tolerasi
